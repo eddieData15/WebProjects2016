@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Music Survey</title>
+<style>
+ h1 {font-family: Arial, Helvetica, sans-serif;}
+
+ form {background-color: #eaeaea;}
+
+ fieldset {border: 4px ridge #99FFFF;}
+
+ legend {font-family: Arial, Helvetica, sans-serif;}
+
+ label {font-family: Arial, Helvetica, sans-serif;}
+</style>
+</head>
+
+<body>
+
+<h1>Music Survey</h1>
+
+<form method="post" action="http://www.markmurtha.com/csis128/readform.asp">
+
+<main>
+
+<legend><h2>About You</h2>
+First Name: <input type="text" name="fname" id="fname"><br><br>
+Last Name: <input type="text" name="lname" id="lname"><br><br>
+E-mail: <input type="text" name="email" id="email"><br><br>
+</legend>
+
+
+<fieldset>
+<legend><h2>About Your Tunes</h2>
+
+Select your favorite types of music (choose at least 3):<br>
+
+<label><input type="checkbox" name="Classical" value="yes">Classical</label><br>
+<label><input type="checkbox" name="Country" value="yes">Country</label><br>
+<label><input type="checkbox" name="Blues" value="yes">Blues</label><br>
+<label><input type="checkbox" name="R&B" value="yes">R&B</label><br>
+<label><input type="checkbox" name="Pop" value="yes">Pop</label><br>
+<label><input type="checkbox" name="Rock" value="yes">Rock</label><br>
+<label><input type="checkbox" name="Alternative" value="yes">Alternative</label><br>
+<label><input type="checkbox" name="Metal" value="yes">Metal</label><br>
+<label><input type="checkbox" name="Electronic" value="yes">Electronic</label><br>
+
+</legend>
+</fieldset><br><br>
+
+<fieldset>
+<legend><h2>What You Buy</h2>
+
+How often do you purchase music?:</br>
+
+<input type="radio" name"purchase" id="purchaseveryoften" value="veryoften">Very Often<br>
+<input type="radio" name"purchase" id="often" value="often">Often<br>
+<input type="radio" name"purchase" id="somewhateoften" value="somewhatoften">Somewhat Often<br>
+<input type="radio" name"purchase" id="notoften" value="notoften">I don't buy music<br>
+
+</legend>
+</fieldset><br><br>
+
+<legend><h2>Where You Listen</h2>
+
+<select size="3" name="location id="location">
+
+<option>Where do you most often listen to music?</option>
+<option value="home">Home</option>
+<option value="work">Work</option>
+<option value="school">School</option>
+<option value="car">Car</option><br>
+</select></legend>
+<br><br>
+
+<legend><h2>Freestyle</h2>
+
+What role does music play in your life?<br>
+
+<textarea name="comments" cols="60" rows="3">Enter your comments here</textarea>
+</legend>
+
+<input type="submit"> <input type="reset">
+
+</form>
+
+</main><br>
+<footer>
+<a href="mailto:EShaffer2083@student.mcckc.edu">Contact Erica Shaffer</a>
+</footer>
+</body>
+</html>

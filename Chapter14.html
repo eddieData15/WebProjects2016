@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Chapter 14</title>
+
+<style>
+form {background-color: #ADD8E6;
+	font-family: Arial, Verdana, sans-serif;}
+</style>
+
+<script>
+function validateForm() {
+
+	if (document.forms["Chapter14"]["name"].value == "") {
+	alert("Name field cannot be empty!");
+	return false;
+}//end if 
+
+
+	if (document.forms["Chapter14"]["email"].value == "") {
+	alert("Sorry! We need your email address.");
+	return false;
+}//end if 
+
+alert("Name and email fields are valid");
+return true;
+
+} //end function validateForm
+	
+</script>
+
+</head>
+
+<h1>Newsletter Sign Up Form</h1>
+
+<body>
+
+<form name="Chapter14" 
+ method="post" 
+ action="http://www.markmurtha.com/csis128/readform.asp"
+ onsubmit="return validateForm();">
+
+  Name: <input type="text" name="name" id="name"><br>
+  <br>
+  E-Mail Address: <input type="text" name="email" id="email">
+
+ <input type="submit" value="Sign Up Now!" id="submit"><br>
+</form>
+
+
+</body>
+</html>
